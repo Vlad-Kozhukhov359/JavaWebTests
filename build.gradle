@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Junit 5
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+
+    // AssertJ for better assertions
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+
+    // Allure
+    implementation group: 'io.qameta.allure' , name: 'allure-junit5' , version: '2.29.0'
+
+    // Selenide
+    implementation group: 'com.codeborne' , name: 'selenide' , version: '7.5.1'
+}
+
+test {
+    useJUnitPlatform()
+}
