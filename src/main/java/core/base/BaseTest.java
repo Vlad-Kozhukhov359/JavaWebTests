@@ -3,6 +3,8 @@ package core.base;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.InputStream;
 import java.util.Properties;
@@ -11,14 +13,18 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class BaseTest {
 
+    protected final Logger logger = LoggerFactory.getLogger(this.getClass());
+
     // Базовый URL для веб тестов
     protected static String baseUrl;
 
     @BeforeEach
     public void setUp() {
+        logger.info("Начало настройки теста");
         baseUrl = determineBaseUrl();
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
+        logger.info("Базовый URL: {}", baseUrl);
     }
 
     private static String determineBaseUrl() {
@@ -44,6 +50,7 @@ public class BaseTest {
 
     @AfterEach
     public void tearDown() {
+        logger.info("Завершение теста, закрытие браузера");
         closeWebDriver();
     }
 
