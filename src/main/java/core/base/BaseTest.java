@@ -24,6 +24,9 @@ public class BaseTest {
         baseUrl = determineBaseUrl();
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
+        Configuration.pageLoadTimeout = 30000; // 30 секунд на загрузку страницы
+        Configuration.timeout = 10000; // 10 секунд на ожидание элементов
+        Configuration.pageLoadStrategy = "none"; // Не ждать полной загрузки страницы
         logger.info("Базовый URL: {}", baseUrl);
     }
 

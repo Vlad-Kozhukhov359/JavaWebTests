@@ -28,6 +28,9 @@ public class LoginPage extends BasePage {
     // Локатор для элемента с сообщением об ошибке входа
     private SelenideElement errorMessage = $("[data-test-id='login-form-error']");
 
+    // Локатор для перехода к восстановлению
+    private SelenideElement goToRecoveryButton = $("[value='st.go_to_recovery']");
+
     @Step("Проверка видимости всех элементов страницы")
     private void verifyPageElements() {
         usernameField.shouldBe(visible);
@@ -46,6 +49,12 @@ public class LoginPage extends BasePage {
         logger.info("Сообщение об ошибке видимо: {}", isVisible);
         return isVisible;
     }
+
+    @Step("Нажимаем восстановить профиль")
+    public void goToRecovery() {
+        goToRecoveryButton.shouldBe(visible).click();
+    }
+
 
     @Step("Получение текста сообщения об ошибке")
     public String getErrorMessageText() {
@@ -84,17 +93,9 @@ public class LoginPage extends BasePage {
     @Step("Ввод логина и пароля")
     public void enterUsernamePassword(String username, String password) {
         logger.info("Попытка входа с логином: {}", username);
-        logger.info("Проверка видимости поля логина");
-        usernameField.shouldBe(visible).click();
-        logger.info("Поле логина кликнуто, вводим значение");
-        usernameField.setValue(username);
-        logger.info("Логин введен, проверка видимости поля пароля");
-        passwordField.shouldBe(visible).click();
-        logger.info("Поле пароля кликнуто, вводим значение");
-        passwordField.setValue(password);
-        logger.info("Пароль введен, проверка видимости кнопки входа");
-        loginButton.shouldBe(visible).click();
-        logger.info("Нажата кнопка входа");
+        enterUsername(username);
+        enterPassword(password);
+        clickLoginButton();
     }
 
     @Step("Переходим на страницу восстановления пароля")

@@ -27,6 +27,14 @@ dependencies {
     implementation 'ch.qos.logback:logback-classic:1.4.14'
 }
 
+compileJava {
+    options.encoding = 'UTF-8'
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
 test {
     useJUnitPlatform()
     systemProperty 'file.encoding', 'UTF-8'

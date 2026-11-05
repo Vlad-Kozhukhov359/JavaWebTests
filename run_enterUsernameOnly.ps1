@@ -1,2 +1,2 @@
 Write-Host "Запуск теста EnterUsernameOnlyTests с логами..."
-.\gradlew test --tests EnterUsernameOnlyTests --info
+.\gradlew clean test --tests EnterUsernameOnlyTests --info
