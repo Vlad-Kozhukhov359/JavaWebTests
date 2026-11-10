@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.AnonymRecoveryTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-11-05T10:25:54" hostname="DESKTOP-EIEVP7C" time="20.673">
+<testsuite name="tests.AnonymRecoveryTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-11-05T10:30:52" hostname="DESKTOP-EIEVP7C" time="22.416">
   <properties/>
-  <testcase name="goToAnonymRecoveryPage()" classname="tests.AnonymRecoveryTest" time="20.673">
-    <failure message="Element not found {[value='st.go_to_recovery']}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/Users/Влад/IdeaProjects/JavaWebTests/build/reports/tests/1793874374886.0.png&#13;&#10;Page source: file:/C:/Users/Влад/IdeaProjects/JavaWebTests/build/reports/tests/1793874374886.0.html&#13;&#10;Timeout: 10 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[value='st.go_to_recovery']&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {[value='st.go_to_recovery']}
+  <testcase name="goToAnonymRecoveryPage()" classname="tests.AnonymRecoveryTest" time="22.416">
+    <failure message="Element not found {[value='st.go_to_recovery']}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/Users/Влад/IdeaProjects/JavaWebTests/build/reports/tests/1793874673985.0.png&#13;&#10;Page source: file:/C:/Users/Влад/IdeaProjects/JavaWebTests/build/reports/tests/1793874673985.0.html&#13;&#10;Timeout: 10 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[value='st.go_to_recovery']&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {[value='st.go_to_recovery']}
 Expected: visible
-Screenshot: file:/C:/Users/Влад/IdeaProjects/JavaWebTests/build/reports/tests/1793874374886.0.png
-Page source: file:/C:/Users/Влад/IdeaProjects/JavaWebTests/build/reports/tests/1793874374886.0.html
+Screenshot: file:/C:/Users/Влад/IdeaProjects/JavaWebTests/build/reports/tests/1793874673985.0.png
+Page source: file:/C:/Users/Влад/IdeaProjects/JavaWebTests/build/reports/tests/1793874673985.0.html
 Timeout: 10 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[value='st.go_to_recovery']&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:90)
@@ -20,7 +20,7 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:86)
 	at app/jdk.proxy3/jdk.proxy3.$Proxy16.shouldBe(Unknown Source)
 	at app//core.pages.LoginPage.goToRecovery(LoginPage.java:55)
-	at app//tests.AnonymRecoveryTest.goToAnonymRecoveryPage(AnonymRecoveryTest.java:32)
+	at app//tests.AnonymRecoveryTest.goToAnonymRecoveryPage(AnonymRecoveryTest.java:34)
 	at java.base@17.0.20.1/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base@17.0.20.1/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base@17.0.20.1/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -30,9 +30,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e98e26d5cde5e6ea39154ff24813f246, findElement {using=css selector, value=[value='st.go_to_recovery']}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 156.0.8078.76, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49872}, goog:processID: 17788, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49872/devtoo..., se:cdpVersion: 156.0.8078.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e98e26d5cde5e6ea39154ff24813f246
+Command: [7a8af8b4aebddafd6d7920f7fe74f434, findElement {using=css selector, value=[value='st.go_to_recovery']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 156.0.8078.76, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54997}, goog:processID: 17732, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54997/devtoo..., se:cdpVersion: 156.0.8078.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a8af8b4aebddafd6d7920f7fe74f434
 	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
 	at java.base@17.0.20.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@17.0.20.1/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -56,50 +56,48 @@ Session ID: e98e26d5cde5e6ea39154ff24813f246
 	... 12 more
 </failure>
   </testcase>
-  <system-out><![CDATA[13:25:54.967 [Test worker] INFO  tests.AnonymRecoveryTest - Начало настройки теста
-13:25:54.998 [Test worker] INFO  tests.AnonymRecoveryTest - Базовый URL: https://ok.ru
-13:25:55.000 [Test worker] INFO  tests.AnonymRecoveryTest - Открываем страницу входа: https://ok.ru
-13:25:55.056 [Test worker] INFO  c.c.s.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-13:25:55.063 [Test worker] INFO  c.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Влад\IdeaProjects\JavaWebTests\build\downloads\1793874355063_15300_1
-13:25:57.980 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - BrowserName=chrome Version=156.0.8078.76 Platform=windows
-13:25:57.980 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - Selenide v. 7.5.1
-13:25:57.980 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - Selenium WebDriver v. 4.25.0 build revision: 8a8aea2337
-13:25:57.980 [Test worker] INFO  c.c.s.d.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on windows (e98e26d5cde5e6ea39154ff24813f246), downloadsFolder: C:\Users\Влад\IdeaProjects\JavaWebTests\build\downloads\1793874355063_15300_1
-13:25:57.985 [Test worker] INFO  c.c.s.d.DisposablesRegistry - Register WebDriverInstance[config=com.codeborne.selenide.ThreadLocalSelenideConfig@4efc25fc, webDriver=ChromeDriver: chrome on windows (e98e26d5cde5e6ea39154ff24813f246), proxy=null, downloadsFolder=C:\Users\Влад\IdeaProjects\JavaWebTests\build\downloads\1793874355063_15300_1] in 1 [size=1]
-13:25:58.003 [Test worker] INFO  c.c.s.d.DisposablesRegistry - Add shutdown hook in 1 [size=1]
-13:25:58.045 [Test worker] INFO  core.pages.LoginPage - Попытка входа с логином: incorrectUser
-13:25:58.046 [Test worker] INFO  core.pages.LoginPage - Ввод логина: incorrectUser
-13:25:58.046 [Test worker] INFO  core.pages.LoginPage - Проверка видимости поля логина
-13:26:03.087 [Test worker] INFO  core.pages.LoginPage - Поле логина кликнуто, вводим значение
-13:26:03.159 [Test worker] INFO  core.pages.LoginPage - Логин введен
-13:26:03.159 [Test worker] INFO  core.pages.LoginPage - Ввод пароля
-13:26:03.159 [Test worker] INFO  core.pages.LoginPage - Проверка видимости поля пароля
-13:26:03.220 [Test worker] INFO  core.pages.LoginPage - Поле пароля кликнуто, вводим значение
-13:26:03.301 [Test worker] INFO  core.pages.LoginPage - Пароль введен
-13:26:03.302 [Test worker] INFO  core.pages.LoginPage - Проверка видимости кнопки входа
-13:26:03.391 [Test worker] INFO  core.pages.LoginPage - Нажата кнопка входа
-13:26:03.391 [Test worker] INFO  core.pages.LoginPage - Ввод пароля
-13:26:03.391 [Test worker] INFO  core.pages.LoginPage - Проверка видимости поля пароля
-13:26:03.913 [Test worker] INFO  core.pages.LoginPage - Поле пароля кликнуто, вводим значение
-13:26:03.976 [Test worker] INFO  core.pages.LoginPage - Пароль введен
-13:26:03.976 [Test worker] INFO  core.pages.LoginPage - Проверка видимости кнопки входа
-13:26:04.047 [Test worker] INFO  core.pages.LoginPage - Нажата кнопка входа
-13:26:04.048 [Test worker] INFO  core.pages.LoginPage - Ввод пароля
-13:26:04.048 [Test worker] INFO  core.pages.LoginPage - Проверка видимости поля пароля
-13:26:04.605 [Test worker] INFO  core.pages.LoginPage - Поле пароля кликнуто, вводим значение
-13:26:04.660 [Test worker] INFO  core.pages.LoginPage - Пароль введен
-13:26:04.661 [Test worker] INFO  core.pages.LoginPage - Проверка видимости кнопки входа
-13:26:04.721 [Test worker] INFO  core.pages.LoginPage - Нажата кнопка входа
-13:26:15.001 [Test worker] INFO  c.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Влад\IdeaProjects\JavaWebTests\build\reports\tests
-13:26:15.140 [Test worker] INFO  tests.AnonymRecoveryTest - Завершение теста, закрытие браузера
-13:26:15.141 [Test worker] INFO  c.codeborne.selenide.impl.FileHelper - Deleted empty folder: C:\Users\Влад\IdeaProjects\JavaWebTests\build\downloads\1793874355063_15300_1
-13:26:15.141 [Test worker] INFO  c.c.s.d.CloseDriverCommand - Close webdriver: 1 -> ChromeDriver: chrome on windows (e98e26d5cde5e6ea39154ff24813f246)...
-13:26:15.594 [Test worker] INFO  c.c.s.d.CloseDriverCommand - Closed webdriver 1 in 453 ms
-13:26:15.599 [Test worker] INFO  c.c.s.d.DisposablesRegistry - Unregister WebDriverInstance[config=com.codeborne.selenide.ThreadLocalSelenideConfig@4efc25fc, webDriver=ChromeDriver: chrome on windows (null), proxy=null, downloadsFolder=C:\Users\Влад\IdeaProjects\JavaWebTests\build\downloads\1793874355063_15300_1] in 1 [size=0]
+  <system-out><![CDATA[13:30:52.083 [Test worker] INFO  tests.AnonymRecoveryTest - Начало настройки теста
+13:30:52.096 [Test worker] INFO  tests.AnonymRecoveryTest - Базовый URL: https://ok.ru
+13:30:52.099 [Test worker] INFO  tests.AnonymRecoveryTest - Открываем страницу входа: https://ok.ru
+13:30:52.143 [Test worker] INFO  c.c.s.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+13:30:52.153 [Test worker] INFO  c.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Влад\IdeaProjects\JavaWebTests\build\downloads\1793874652153_12356_1
+13:30:53.920 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - BrowserName=chrome Version=156.0.8078.76 Platform=windows
+13:30:53.920 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - Selenide v. 7.5.1
+13:30:53.920 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - Selenium WebDriver v. 4.25.0 build revision: 8a8aea2337
+13:30:53.920 [Test worker] INFO  c.c.s.d.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on windows (7a8af8b4aebddafd6d7920f7fe74f434), downloadsFolder: C:\Users\Влад\IdeaProjects\JavaWebTests\build\downloads\1793874652153_12356_1
+13:30:53.922 [Test worker] INFO  c.c.s.d.DisposablesRegistry - Register WebDriverInstance[config=com.codeborne.selenide.ThreadLocalSelenideConfig@4efc25fc, webDriver=ChromeDriver: chrome on windows (7a8af8b4aebddafd6d7920f7fe74f434), proxy=null, downloadsFolder=C:\Users\Влад\IdeaProjects\JavaWebTests\build\downloads\1793874652153_12356_1] in 1 [size=1]
+13:30:53.938 [Test worker] INFO  c.c.s.d.DisposablesRegistry - Add shutdown hook in 1 [size=1]
+13:30:53.987 [Test worker] INFO  core.pages.LoginPage - Ввод логина: incorrectUser
+13:30:53.988 [Test worker] INFO  core.pages.LoginPage - Проверка видимости поля логина
+13:31:01.004 [Test worker] INFO  core.pages.LoginPage - Поле логина кликнуто, вводим значение
+13:31:01.083 [Test worker] INFO  core.pages.LoginPage - Логин введен
+13:31:01.083 [Test worker] INFO  core.pages.LoginPage - Ввод пароля
+13:31:01.083 [Test worker] INFO  core.pages.LoginPage - Проверка видимости поля пароля
+13:31:01.151 [Test worker] INFO  core.pages.LoginPage - Поле пароля кликнуто, вводим значение
+13:31:01.220 [Test worker] INFO  core.pages.LoginPage - Пароль введен
+13:31:01.221 [Test worker] INFO  core.pages.LoginPage - Проверка видимости кнопки входа
+13:31:02.543 [Test worker] INFO  core.pages.LoginPage - Нажата кнопка входа
+13:31:02.544 [Test worker] INFO  core.pages.LoginPage - Ввод пароля
+13:31:02.545 [Test worker] INFO  core.pages.LoginPage - Проверка видимости поля пароля
+13:31:03.106 [Test worker] INFO  core.pages.LoginPage - Поле пароля кликнуто, вводим значение
+13:31:03.168 [Test worker] INFO  core.pages.LoginPage - Пароль введен
+13:31:03.169 [Test worker] INFO  core.pages.LoginPage - Проверка видимости кнопки входа
+13:31:03.224 [Test worker] INFO  core.pages.LoginPage - Нажата кнопка входа
+13:31:03.224 [Test worker] INFO  core.pages.LoginPage - Ввод пароля
+13:31:03.224 [Test worker] INFO  core.pages.LoginPage - Проверка видимости поля пароля
+13:31:03.708 [Test worker] INFO  core.pages.LoginPage - Поле пароля кликнуто, вводим значение
+13:31:03.764 [Test worker] INFO  core.pages.LoginPage - Пароль введен
+13:31:03.764 [Test worker] INFO  core.pages.LoginPage - Проверка видимости кнопки входа
+13:31:03.828 [Test worker] INFO  core.pages.LoginPage - Нажата кнопка входа
+13:31:14.317 [Test worker] INFO  tests.AnonymRecoveryTest - Завершение теста, закрытие браузера
+13:31:14.318 [Test worker] INFO  c.codeborne.selenide.impl.FileHelper - Deleted empty folder: C:\Users\Влад\IdeaProjects\JavaWebTests\build\downloads\1793874652153_12356_1
+13:31:14.318 [Test worker] INFO  c.c.s.d.CloseDriverCommand - Close webdriver: 1 -> ChromeDriver: chrome on windows (7a8af8b4aebddafd6d7920f7fe74f434)...
+13:31:14.470 [Test worker] INFO  c.c.s.d.CloseDriverCommand - Closed webdriver 1 in 152 ms
+13:31:14.475 [Test worker] INFO  c.c.s.d.DisposablesRegistry - Unregister WebDriverInstance[config=com.codeborne.selenide.ThreadLocalSelenideConfig@4efc25fc, webDriver=ChromeDriver: chrome on windows (null), proxy=null, downloadsFolder=C:\Users\Влад\IdeaProjects\JavaWebTests\build\downloads\1793874652153_12356_1] in 1 [size=0]
 ]]></system-out>
-  <system-err><![CDATA[нояб. 05, 2026 1:25:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <system-err><![CDATA[нояб. 05, 2026 1:30:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 156
-нояб. 05, 2026 1:25:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+нояб. 05, 2026 1:30:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 156.0.8078.76. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

@@ -24,7 +24,9 @@ public class AnonymRecoveryTest extends BaseTest {
 
     @Test
     public void goToAnonymRecoveryPage() {
-        loginPage.enterUsernamePassword("incorrectUser", "incorrectPassword");
+        loginPage.enterUsername("incorrectUser");
+        loginPage.enterPassword("incorrectPassword");
+        loginPage.clickLoginButton();
         for (int i = 0; i < 2; i++) {
             loginPage.enterPassword("incorrectPassword");
             loginPage.clickLoginButton();

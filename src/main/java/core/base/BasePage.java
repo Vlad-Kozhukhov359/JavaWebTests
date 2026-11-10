@@ -39,11 +39,6 @@ public abstract class BasePage {
         headerLogo.shouldBe(visible).click();
     }
 
-    @Step("Принять куки")
-    public void acceptCookie() {
-        acceptCookieButton.shouldBe(visible).click();
-    }
-
     @Step("Принять куки (если элемент присутствует)")
     public void acceptCookieIfPresent() {
         if (acceptCookieButton.is(visible)) {
@@ -52,11 +47,6 @@ public abstract class BasePage {
         } else {
             logger.info("Кнопка принятия куки не найдена, пропускаем");
         }
-    }
-
-    @Step("Принять приватность")
-    public void acceptPrivacy() {
-        acceptPrivacyButton.shouldBe(visible).click();
     }
 
     @Step("Принять приватность (если элемент присутствует)")
